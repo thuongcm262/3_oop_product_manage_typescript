@@ -1,12 +1,14 @@
 {
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "lite-server": "^2.6.1",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/main.js",
+    "build": "tsc && tsc-alias",
+    "start": "lite-server",
     "dev": "ts-node src/main.ts"
   }
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product & Cart App</title>
+  <script type="module" src="./dist/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+  <h1 class="text-2xl font-bold mb-4">Quản lý sản phẩm & Giỏ hàng</h1>
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <h2 class="text-xl font-semibold">Sản phẩm</h2>
+      <div id="product-list" class="grid gap-4 mt-2"></div>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold">Giỏ hàng</h2>
+      <div id="cart-list" class="mt-2"></div>
+      <p class="font-bold mt-4">Tổng: <span id="cart-total">0</span> VND</p>
+    </div>
+  </div>
+</body>
+</html>
